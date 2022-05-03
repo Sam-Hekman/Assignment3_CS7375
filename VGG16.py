@@ -93,7 +93,7 @@ n_epochs = 12
 n_batch_size = 24
 #n_learning_rate = 0.005
 
-# Compile the model, I am was using Adam, but went back to SGD as the optimizer and loss is derived from the cross entropy function
+# Compile the model, I was using Adam, but went back to SGD as the optimizer and loss is derived from the cross entropy function
 VGG16.compile(optimizer="SGD",
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
